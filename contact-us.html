@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Gaurav G Agrawal & Co. Chartered Accountants</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .contact-page { padding: 80px 0; background: #f8f9fa; }
+        .contact-container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 20px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: start;
+        }
+        .contact-info h3 { color: #003087; margin: 25px 0 15px; font-size: 20px; }
+        .contact-info p, .contact-info a { color: #333; font-size: 16px; line-height: 1.8; }
+        .contact-info a { color: #003087; text-decoration: none; }
+        .contact-form {
+            background: #fff;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 5px 25px rgba(0,0,0,0.08);
+        }
+        .form-group { margin-bottom: 20px; }
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 14px;
+            border: 1px solid #ddd;
+            border-radius: 6px;
+            font-size: 15px;
+        }
+        .form-group textarea { height: 120px; resize: vertical; }
+        .checkbox-group {
+            margin: 20px 0;
+            display: flex;
+            align-items: flex-start;
+            gap: 10px;
+            font-size: 14px;
+            color: #555;
+        }
+        .checkbox-group input[type="checkbox"] {
+            margin-top: 3px;
+        }
+        .btn-submit {
+            background: #003087;
+            color: #fff;
+            padding: 14px 40px;
+            border: none;
+            border-radius: 6px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            width: 100%;
+        }
+        .btn-submit:hover { background: #00205b; }
+
+        @media (max-width: 768px) {
+            .contact-container { grid-template-columns: 1fr; gap: 40px; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Top Bar -->
+    <header class="top-bar">
+        <div class="container">
+            <div class="contact-info">
+                Email: contact(at)cagga.co.in &nbsp;&nbsp;|&nbsp;&nbsp; Phone: +91 97214 19001
+            </div>
+            <a href="#" class="jobs-btn">Jobs @ CAGGA</a>
+        </div>
+    </header>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <img src="images/GAURAV-G-AGRAWAL-CO.-blue-logo-1.png" alt="CAGGA Logo" class="logo">
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="./about-us.html">About Us</a></li>
+                <li class="dropdown"><a href="#">Our Services ▼</a>
+                    <ul class="dropdown-menu">...</ul>
+                </li>
+                <li class="dropdown"><a href="#">Registration & License ▼</a>
+                    <ul class="dropdown-menu">...</ul>
+                </li>
+                <li><a href="#">Blogs</a></li>
+                <li class="dropdown"><a href="#">Resources ▼</a></li>
+                <li><a href="#">Careers</a></li>
+                <li><a href="./contact-us.html" class="active">Contact Us</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Banner -->
+    <section class="hero" style="position:relative; height:250px; overflow:hidden;">
+        <img src="images/Screenshot 2025-11-20 115025.png" alt="Contact" style="width:100%; height:100%; object-fit:cover;">
+        <div style="position:absolute; top:50%; left:50%; transform:translate(-50%,-50%); text-align:center; color:#fff;">
+            <!-- <p style="margin-bottom:10px; font-size:18px;"><a href="index.html" style="color:#ccc;">Home</a> » Contact Us</p> -->
+            <!-- <h1 style="font-size:48px; margin:0;">Contact Us</h1> -->
+        </div>
+    </section>
+
+    <!-- Contact Page Content -->
+    <section class="contact-page">
+        <div class="contact-container">
+
+            <!-- Left Side - Contact Info -->
+            <div class="contact-info">
+                <h3>Head Office</h3>
+                <p>41B-Gopal Kunj, Sheesh Mahal Colony,<br>Beniganj, Gorakhpur-273001,<br>Uttar Pradesh, India</p>
+
+                <h3>Email Us</h3>
+                <p><a href="mailto:contact@cagga.co.in">contact(at)cagga.co.in</a></p>
+
+                <h3>Call Us</h3>
+                <p><a href="tel:+919721419001">+91 97214 19001</a></p>
+            </div>
+
+            <!-- Right Side - Contact Form -->
+            <div class="contact-form">
+                <form action="https://formspree.io/f/your-form-id" method="POST"> <!-- Ya phir apna backend -->
+                    <div class="form-group">
+                        <input type="text" name="name" placeholder="Full Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="tel" name="phone" placeholder="Phone Number" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" name="email" placeholder="Email" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea name="message" placeholder="Message" required></textarea>
+                    </div>
+
+                    <!-- Checkbox (DND/NDNC Override) -->
+                    <div class="checkbox-group">
+                        <input type="checkbox" id="consent" name="consent" required>
+                        <label for="consent">
+                            I agree and authorise to call/ send SMS / RCS / Promotional/ Informational messages/notifications. 
+                            This will override the registry with DNC/NDNC *
+                        </label>
+                    </div>
+
+                    <button type="submit" class="btn-submit">SUBMIT</button>
+                </form>
+            </div>
+
+        </div>
+    </section>
+
+     <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div>
+                <h4>Contact Us</h4>
+                <p>Head Office: 41B-Gopal Kunj, Sheesh Mahal Colony, Beniganj, Gorakhpur-273001, Uttar Pradesh</p>
+                <p>Email: contact(at)cagga.co.in</p>
+                <p>Phone: +91 97214 19001</p>
+            </div>
+            <div>
+                <h4>Company</h4>
+                <ul>
+                    <li><a href="./about-us.html">About</a></li>
+                    <li><a href="#">Knowledge Base</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="./contact-us.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>Services</h4>
+                <ul>
+                    <li><a href="#">Audit Assurance</a></li>
+                    <li><a href="#">Banking Finance</a></li>
+                    <li><a href="#">Corporate Law</a></li>
+                    <li><a href="#">Direct Taxes</a></li>
+                    <li><a href="#">Indirect Taxes</a></li>
+                    <li><a href="#">Management Consultancy</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>Registration</h4>
+                <ul>
+                    <li><a href="#">Company Incorporation</a></li>
+                    <li><a href="#">FSSAI Registration</a></li>
+                    <li><a href="#">GST Registration</a></li>
+                    <li><a href="#">IEC</a></li>
+                    <li><a href="#">MSME Registration</a></li>
+                    <li><a href="#">Trademark & IP</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>Terms & Policies</h4>
+                <ul>
+                    <!-- <li><a href="sitemap.html">Sitemap</a></li> -->
+                    <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                    <li><a href="disclaimer.html">Disclaimer</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2025 Gaurav G Agrawal & Co. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

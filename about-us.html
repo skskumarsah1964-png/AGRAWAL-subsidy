@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Gaurav G Agrawal & Co. Chartered Accountants</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .about-hero {
+            position: relative;
+            height: 300px;
+            background: linear-gradient(rgba(0,48,135,0.9), rgba(0,48,135,0.8)), url('images/about-hero.jpg');
+            background-size: cover;
+            background-position: center;
+            color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+        .about-hero h1 { font-size: 48px; margin-bottom: 10px; }
+        .breadcrumb { font-size: 18px; }
+        .breadcrumb a { color: #ccc; text-decoration: none; }
+
+        .about-section { padding: 100px 0; background: #f8f9fa; }
+        .about-content {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 20px;
+            line-height: 1.8;
+            font-size: 16px;
+        }
+        .about-content h2 {
+            color: #003087;
+            font-size: 32px;
+            margin: 50px 0 25px;
+            text-align: center;
+        }
+        .vision-mission {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 50px;
+            margin: 60px 0;
+        }
+        .vision-box, .mission-box {
+            background: #fff;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+        }
+        .vision-box h3, .mission-box h3 {
+            color: #ff6b35;
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        .team-section { padding: 80px 0; background: #fff; }
+        .team-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 40px;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        .team-card {
+            background: #fff;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+            text-align: center;
+            transition: transform 0.3s;
+        }
+        .team-card:hover { transform: translateY(-10px); }
+        .team-img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+        }
+        .team-info {
+            padding: 25px;
+        }
+        .team-info h3 {
+            color: #003087;
+            font-size: 22px;
+            margin-bottom: 8px;
+        }
+        .team-role {
+            color: #ff6b35;
+            font-weight: bold;
+            font-size: 16px;
+            margin-bottom: 15px;
+        }
+
+        @media (max-width: 768px) {
+            .vision-mission { grid-template-columns: 1fr; }
+            .about-hero h1 { font-size: 36px; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Top Bar -->
+    <header class="top-bar">
+        <div class="container">
+            <div class="contact-info">
+                Email: contact(at)cagga.co.in &nbsp;&nbsp;|&nbsp;&nbsp; Phone: +91 97214 19001
+            </div>
+            <a href="#" class="jobs-btn">Jobs @ CAGGA</a>
+        </div>
+    </header>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <img src="images/GAURAV-G-AGRAWAL-CO.-blue-logo-1.png" alt="CAGGA Logo" class="logo">
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about-us.html" class="active">About Us</a></li>
+                <li class="dropdown"><a href="#">Our Services ▼</a><ul class="dropdown-menu">...</ul></li>
+                <li class="dropdown"><a href="#">Registration & License ▼</a><ul class="dropdown-menu">...</ul></li>
+                <li><a href="#">Blogs</a></li>
+                <li class="dropdown"><a href="#">Resources ▼</a></li>
+                <li><a href="#">Careers</a></li>
+                <li><a href="contact-us.html">Contact Us</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Banner -->
+    <section class="about-hero">
+        <div>
+            <p class="breadcrumb"><a href="index.html">Home</a> » About Us</p>
+            <h1>About Us</h1>
+        </div>
+    </section>
+
+    <!-- About Content -->
+    <section class="about-section">
+        <div class="about-content">
+            <h2>Gaurav G Agrawal & Co.</h2>
+            <p><strong>Gaurav G Agrawal & Co. Chartered Accountants</strong> was established on <strong>28th December 2007</strong> by our founder member and Managing Partner, <strong>CA. Gaurav Agrawal</strong>. Over the years the firm has gained immense experience of rendering diverse professional services in the vertical of Taxation, Regulatory, Audit & Assurance and management consultancy.</p>
+
+            <p>We have an extensive team of professionals with sound regulatory & professional knowledge and strong business acumen. We aim at applying intelligence and expertise by providing realistic solutions to complicated business scenarios using analytical skills, functional expertise and intensive training.</p>
+
+            <p>We recognise that each client is unique with distinct needs, which must be fully comprehended and analysed in all its dimensions before the right service options can be offered. The firm aims to consistently provide customized solutions to each client, drawing on its wide range of practical experience across a multitude of industries.</p>
+
+            <p>We believe in developing a special relationship with our clients which forms the basis of our approach and results in consistent relation with many of our clients for decades.</p>
+
+            <!-- Vision & Mission -->
+            <div class="vision-mission">
+                <div class="vision-box">
+                    <h3>Our Vision</h3>
+                    <p>We envision a future where our commitment to serving <strong>10 Lacs business owners globally</strong> has fostered widespread financial literacy, enabling them to make informed decisions and thrive in the competitive business landscape. Through our efforts, we aspire to create a ripple effect of economic empowerment, driving prosperity and innovation across diverse industries.</p>
+                </div>
+                <div class="mission-box">
+                    <h3>Our Mission</h3>
+                    <p>Our mission is to empower and support at least <strong>10 Lacs business owners</strong> with the knowledge and resources necessary to achieve financial discipline by understanding their own financial statements, and become statutorily compliant. We are dedicated to assisting entrepreneurs in accessing investment incentives to accelerate their journey towards achieving sustainable growth.</p>
+                </div>
+            </div>
+
+            <!-- <h2>Our Leaders</h2> -->
+            <!-- <p style="text-align:center; margin-bottom:50px;">We have got highly respected professionals leading from the front, keeping people-first approach in everything we do.</p> -->
+        </div>
+    </section>
+   
+     <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div>
+                <h4>Contact Us</h4>
+                <p>Head Office: 41B-Gopal Kunj, Sheesh Mahal Colony, Beniganj, Gorakhpur-273001, Uttar Pradesh</p>
+                <p>Email: contact(at)cagga.co.in</p>
+                <p>Phone: +91 97214 19001</p>
+            </div>
+            <div>
+                <h4>Company</h4>
+                <ul>
+                    <li><a href="./about-us.html">About</a></li>
+                    <li><a href="#">Knowledge Base</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="./contact-us.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>Services</h4>
+                <ul>
+                    <li><a href="#">Audit Assurance</a></li>
+                    <li><a href="#">Banking Finance</a></li>
+                    <li><a href="#">Corporate Law</a></li>
+                    <li><a href="#">Direct Taxes</a></li>
+                    <li><a href="#">Indirect Taxes</a></li>
+                    <li><a href="#">Management Consultancy</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>Registration</h4>
+                <ul>
+                    <li><a href="#">Company Incorporation</a></li>
+                    <li><a href="#">FSSAI Registration</a></li>
+                    <li><a href="#">GST Registration</a></li>
+                    <li><a href="#">IEC</a></li>
+                    <li><a href="#">MSME Registration</a></li>
+                    <li><a href="#">Trademark & IP</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>Terms & Policies</h4>
+                <ul>
+                    <!-- <li><a href="sitemap.html">Sitemap</a></li> -->
+                    <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                    <li><a href="disclaimer.html">Disclaimer</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2025 Gaurav G Agrawal & Co. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
